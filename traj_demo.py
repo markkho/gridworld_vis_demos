@@ -7,6 +7,13 @@ from matplotlib.path import Path
 import matplotlib.patheffects as path_effects
 import matplotlib.patches as patches
 
+'''
+Trajectory visualization demo
+Mark Ho 2017
+
+
+'''
+
 def visualize_trajectory(axis, traj, 
 						 jitter_mean=0,
 						 jitter_var = .1, endpoint_jitter = False,
@@ -84,6 +91,7 @@ def visualize_states(ax=None, states=None,
 	ax.axis('scaled')
 
 	return ax
+	
 if __name__ == '__main__':
 	states = list(product(range(5), range(5)))
 	ax = visualize_states(states=states)
